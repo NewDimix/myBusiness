@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('../blocks/head/head.html', {
+    'title': 'Мой бизнес',
+    'contentText': 'Мой бизнес',
+    'keywordsText': 'бизнес',
+    'googleVerificationToken': '',
+    'programGenerationWithPage': '',
+    'previewBigImg': '',
+    'previewSmallImg': '',
+    'facebookUrlPage': '',
+    'facebookContentType': 'website',
+    'twitterNickname': '@NewDimix',
+    'twitterNicknameCompany': '@NewDimix',
+    'GoogleAuthorshipAuthor': '',
+    'GoogleAuthorshipPublisher': '',
+    'color': '#FFFFFF',
+    })
+</head>
+
+<body>
+    <svg id="filterBtnSvg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+            </filter>
+        </defs>
+    </svg>
+
+    @@include('../blocks/svgSprite/svgSprite.html')
+
+    <header class="header parallax">
+        <div class="header__bg parallax__content"></div>
+
+        <div class="header__content container">
+            <div class="header__topLine">
+                <div class="header__topLinePath">
+                    @@include('../blocks/btn/btn.html', {
+                    'elementClass': 'header__account blobBtn_red',
+                    'title': 'Личный кабинет',
+                    'link': '#'
+                    })
+                    <a href="#" class="header__catalog">Каталог услуг</a>
+                </div>
+
+                <div class="header__topLinePath">
+                    <a href="#" class="header__assistant">Онлайн помощник
+                        <div class="header__assistantIconWrap">
+                            <svg class="header__assistantIcon">
+                                <use xlink:href="#whiteIcon"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            @@include('../blocks/logo/logo.html', {
+            'elementClass': 'header__logo',
+            })
+
+            <p class="header__text animate">Мой бизнес - цифровая платформа<br> для тех, кто хочет открыть и<br> развивать свой бизнес</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <aside class="main__business business animate">
+            <div class="business__wrap">
+                <p class="business__text container">Для начала работы ответьте на вопрос, есть ли у вас уже существующий бизнес?</p>
+                <div class="business__btns container">
+                    @@include('../blocks/btn/btn.html', {
+                    'elementClass': 'business__btn blobBtn_red',
+                    'title': 'Да, у меня уже есть бизнес',
+                    'link': '#'
+                    })
+                    @@include('../blocks/btn/btn.html', {
+                    'elementClass': 'business__btn blobBtn_blue',
+                    'title': 'Нет, но планирую открыть',
+                    'link': '#'
+                    })
+                </div>
+            </div>
+        </aside>
+
+        <section class="main__advantage advantage container">
+            <h2 class="advantage__title title animate">Преимущества</h2>
+
+            <div class="advantage__content">
+                <div class="advantage__item advantageItem animate">
+                    <svg class="advantageItem__img">
+                        <use xlink:href="#advantageIcon1"></use>
+                    </svg>
+                    <div class="advantageItem__count animate countAnimate">482</div>
+                    <p class="advantageItem__text">Организаций поддержки<br> по Российской Федерации</p>
+                </div>
+
+                <div class="advantage__item advantageItem animate">
+                    <svg class="advantageItem__img">
+                        <use xlink:href="#advantageIcon2"></use>
+                    </svg>
+                    <div class="advantageItem__count animate countAnimate">5240</div>
+                    <p class="advantageItem__text">Оказано услуг<br> государственной поддержки</p>
+                </div>
+
+                <div class="advantage__item advantageItem animate">
+                    <svg class="advantageItem__img">
+                        <use xlink:href="#advantageIcon3"></use>
+                    </svg>
+                    <div class="advantageItem__count animate countAnimate">1360</div>
+                    <p class="advantageItem__text">Зарегестрировано<br> участников проекта</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__success success">
+            <h2 class="success__title title animate">Истории успеха</h2>
+
+            <div class="success__content">
+                <div class="success__item successItem animate">
+                    <div class="successItem__img">
+                        <svg class="successItem__imgBg">
+                            <use xlink:href="#successBg1"></use>
+                        </svg>
+                        <img src="img/successPhoto1.png" alt="Фото">
+                        <div class="successItem__imgIcon quoteIcon quoteIcon_blue">
+                            <span class="quoteIcon__icon"></span>
+                        </div>
+                        <div class="successItem__imgIcon2 squareIcon squareIcon_white">
+                            <span class="squareIcon__icon"></span>
+                        </div>
+                    </div>
+
+                    <div class="successItem__content">
+                        <h3 class="successItem__title">Пекарня “Русские традиции”</h3>
+
+                        <blockquote class="successItem__quote">
+                            <div class="successItem__quoteIcon quoteIcon quoteIcon_red"><span class="quoteIcon__icon"></span><span class="quoteIcon__icon"></span></div>Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что такое русская кухня», «обьяснить, что она жива».
+                        </blockquote>
+
+                        <p class="successItem__text">Чтобы мини-пекарня стала рентабельным бизнесом, необходимы строгие расчет, учет рисков и перспектив, анализ рынка, налаживание сбыта.</p>
+
+                        <a href="#" class="successItem__more blobBtn_blue blobBtn">
+                            Читать историю
+                            <span class="blobBtn__arrow"></span>
+                            <span class="blobBtn__inner">
+                                <span class="blobBtn__blobs">
+                                    <span class="blobBtn__blob"></span>
+                                    <span class="blobBtn__blob"></span>
+                                    <span class="blobBtn__blob"></span>
+                                    <span class="blobBtn__blob"></span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="success__item successItem successItem_reflected animate">
+                    <div class="successItem__img">
+                        <svg class="successItem__imgBg">
+                            <use xlink:href="#successBg2"></use>
+                        </svg>
+                        <img src="img/successPhoto2.png" alt="Фото">
+                        <div class="successItem__imgIcon quoteIcon quoteIcon_gray">
+                            <span class="quoteIcon__icon"></span>
+                        </div>
+                        <div class="successItem__imgIcon2 squareIcon squareIcon_blue">
+                            <span class="squareIcon__icon"></span>
+                        </div>
+                    </div>
+
+                    <div class="successItem__content">
+                        <h3 class="successItem__title">Автомастерская</h3>
+
+                        <blockquote class="successItem__quote">
+                            <div class="successItem__quoteIcon quoteIcon quoteIcon_red"><span class="quoteIcon__icon"></span><span class="quoteIcon__icon"></span></div>Первые дни независимости. Когда не нужно рано вставать, когда не нужно отпрашиваться, что бы успеть съездить в магазин, когда удобно.
+                        </blockquote>
+
+                        <p class="successItem__text">Встреча в городе Н с моими будущими партнерами была плодотворной. Я не смог заснуть до пяти утра – не потому что не спалось, но потому что мысли о будущих перспективах просто взрывали мой мозг.</p>
+
+                        <a href="#" class="successItem__more blobBtn_blue blobBtn">
+                            Читать историю
+                            <span class="blobBtn__arrow"></span>
+                            <span class="blobBtn__inner">
+                                <span class="blobBtn__blobs">
+                                    <span class="blobBtn__blob"></span>
+                                    <span class="blobBtn__blob"></span>
+                                    <span class="blobBtn__blob"></span>
+                                    <span class="blobBtn__blob"></span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="success__item successItem animate">
+                    <div class="successItem__img">
+                        <svg class="successItem__imgBg">
+                            <use xlink:href="#successBg3"></use>
+                        </svg>
+                        <img src="img/successPhoto3.png" alt="Фото">
+                        <div class="successItem__imgIcon quoteIcon quoteIcon_blue">
+                            <span class="quoteIcon__icon"></span>
+                        </div>
+                        <div class="successItem__imgIcon2 squareIcon squareIcon_white">
+                            <span class="squareIcon__icon"></span>
+                        </div>
+                    </div>
+
+                    <div class="successItem__content">
+                        <h3 class="successItem__title">Салон красоты “Эмират”</h3>
+
+                        <blockquote class="successItem__quote">
+                            <div class="successItem__quoteIcon quoteIcon quoteIcon_red"><span class="quoteIcon__icon"></span><span class="quoteIcon__icon"></span></div>Когда же появилась возможность открыть свой бизнес, я рассматривала различные варианты, изучала всевозможные направления.
+                        </blockquote>
+
+                        <a href="#" class="successItem__more blobBtn_blue blobBtn">
+                            Читать историю
+                            <span class="blobBtn__arrow"></span>
+                            <span class="blobBtn__inner">
+                                <span class="blobBtn__blobs">
+                                    <span class="blobBtn__blob"></span>
+                                    <span class="blobBtn__blob"></span>
+                                    <span class="blobBtn__blob"></span>
+                                    <span class="blobBtn__blob"></span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <aside class="footer__question question animate">
+            <div class="question__wrap">
+                <div class="question__content container">
+                    <span class="question__title">Есть вопросы?</span>
+                    <p class="question__text">Задайте интересующие вас вопросы<br> онлайн помощнику</p>
+                    <a href="#" class="question__btn blobBtn_red blobBtn">
+                        <svg class="question__assistantIcon">
+                            <use xlink:href="#whiteIcon"></use>
+                        </svg>
+                        Онлайн помощник
+                        <span class="blobBtn__inner">
+                            <span class="blobBtn__blobs">
+                                <span class="blobBtn__blob"></span>
+                                <span class="blobBtn__blob"></span>
+                                <span class="blobBtn__blob"></span>
+                                <span class="blobBtn__blob"></span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="footer__bottomLine bottomLine">
+            <div class="bottomLine__content container">
+                <nav class="bottomLine__nav">
+                    <ul class="bottomLine__ul">
+                        <li class="bottomLine__li"><a href="#">Услуги и поддержка</a></li>
+                        <li class="bottomLine__li"><a href="#">Сервисы для бизнеса</a></li>
+                        <li class="bottomLine__li"><a href="#">Общая информация </a></li>
+                        <li class="bottomLine__li"><a href="#">Защита бизнеса</a></li>
+                    </ul>
+                </nav>
+
+                <div class="bottomLine__contacts">
+                    <a class="bottomLine__mail" href="mailto:service@in-line.ru">service@in-line.ru</a>
+                    <a class="bottomLine__tel" href="tel:88002007430">8-800-200-74-30</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=1"></script>
+</body>
+
+</html>

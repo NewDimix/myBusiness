@@ -1,0 +1,22 @@
+.squareIcon {
+	position: relative;
+
+	&__icon {
+		display: inline-block;
+		width: 2.5em;
+		height: 2.5em;
+		clip-path: polygon(0 0, 25% 0, 25% 25%, 50% 25%, 50% 50%, 75% 50%, 75% 75%, 100% 75%, 100% 100%, 50% 100%, 50% 75%, 25% 75%, 25% 50%, 0 50%);
+	}
+
+	&_white {
+		.squareIcon__icon {
+			background-color: #ffffff;
+		}
+	}
+
+	&_blue {
+		.squareIcon__icon {
+			background-color: #3865a7;
+		}
+	}
+}

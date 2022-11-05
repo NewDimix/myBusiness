@@ -1,0 +1,61 @@
+$fontsPath: "fonts/";
+
+@font-face {
+	font-family: "Circe-Light";
+	src: url($fontsPath + "Circe-Light.eot");
+	src: url($fontsPath + "Circe-Light.eot?#iefix") format("embedded-opentype"), url($fontsPath + "Circe-Light.svg#Circe-Light") format("svg"), url($fontsPath + "Circe-Light.ttf") format("truetype"), url($fontsPath + "Circe-Light.woff") format("woff"), url($fontsPath + "Circe-Light.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin сirce300 {
+	font-family: "Circe-Light", sans-serif, Helvetica;
+	font-weight: 300;
+}
+
+// @include сirce300;
+
+@font-face {
+	font-family: "Circe-Regular";
+	src: url($fontsPath + "Circe-Regular.eot");
+	src: url($fontsPath + "Circe-Regular.eot?#iefix") format("embedded-opentype"), url($fontsPath + "Circe-Regular.svg#Circe-Regular") format("svg"), url($fontsPath + "Circe-Regular.ttf") format("truetype"), url($fontsPath + "Circe-Regular.woff") format("woff"), url($fontsPath + "Circe-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin сirce400 {
+	font-family: "Circe-Regular", sans-serif, Helvetica;
+	font-weight: 400;
+}
+
+// @include сirce400;
+
+@font-face {
+	font-family: "Circe-Bold";
+	src: url($fontsPath + "Circe-Bold.eot");
+	src: url($fontsPath + "Circe-Bold.eot?#iefix") format("embedded-opentype"), url($fontsPath + "Circe-Bold.svg#Circe-Bold") format("svg"), url($fontsPath + "Circe-Bold.ttf") format("truetype"), url($fontsPath + "Circe-Bold.woff") format("woff"), url($fontsPath + "Circe-Bold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin сirce700 {
+	font-family: "Circe-Bold", sans-serif, Helvetica;
+	font-weight: 700;
+}
+
+// @include сirce700;
+
+@font-face {
+	font-family: "Circe-ExtraBold";
+	src: url($fontsPath + "Circe-ExtraBold.eot");
+	src: url($fontsPath + "Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url($fontsPath + "Circe-ExtraBold.svg#Circe-ExtraBold") format("svg"), url($fontsPath + "Circe-ExtraBold.ttf") format("truetype"), url($fontsPath + "Circe-ExtraBold.woff") format("woff"), url($fontsPath + "Circe-ExtraBold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin сirce900 {
+	font-family: "Circe-ExtraBold", sans-serif, Helvetica;
+	font-weight: 900;
+}
+
+// @include сirce900;

@@ -1,0 +1,13 @@
+/*
+@mixin example {
+    ...
+}
+
+.selector {
+	@include example;
+}
+*/
+
+@function getIntermediateValue($min, $max, $allStep, $step, $unit) {
+	@return (($min + (calc(($max - $min) / $allStep) * $step)) * $unit);
+}

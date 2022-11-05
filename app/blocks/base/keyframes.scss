@@ -1,0 +1,140 @@
+@keyframes particle1 {
+	0% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 1;
+	}
+
+	99% {
+		transform: translate(150%, 300%) rotate(180deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 0;
+	}
+}
+
+@keyframes particle3 {
+	0% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 1;
+	}
+
+	99% {
+		transform: translate(75%, 300%) rotate(180deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 0;
+	}
+}
+
+@keyframes particle5 {
+	0% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 1;
+	}
+
+	99% {
+		transform: translate(0, 300%) rotate(180deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 0;
+	}
+}
+
+@keyframes particle4 {
+	0% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 1;
+	}
+
+	99% {
+		transform: translate(-75%, 300%) rotate(180deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 0;
+	}
+}
+
+@keyframes particle2 {
+	0% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 1;
+	}
+
+	99% {
+		transform: translate(-150%, 300%) rotate(180deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0, 0) rotate(0);
+		opacity: 0;
+	}
+}
+
+@keyframes rocketMove {
+	0% {
+		transform: translateX(0) rotate(3deg);
+	}
+
+	12% {
+		transform: translateX(-4%) rotate(-3deg);
+	}
+
+	25% {
+		transform: translateX(-8%) rotate(3deg);
+	}
+
+	37% {
+		transform: translateX(-4%) rotate(-3deg);
+	}
+
+	50% {
+		transform: translateX(0) rotate(3deg);
+	}
+
+	62% {
+		transform: translateX(4%) rotate(-3deg);
+	}
+
+	75% {
+		transform: translateX(8%) rotate(3deg);
+	}
+
+	87% {
+		transform: translateX(4%) rotate(-3deg);
+	}
+
+	100% {
+		transform: translateX(0) rotate(3deg);
+	}
+}
+
+@keyframes rotateBg {
+	0% {
+		transform: rotate(0);
+	}
+
+	25% {
+		transform: rotate(20deg);
+	}
+
+	75% {
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		transform: rotate(0);
+	}
+}

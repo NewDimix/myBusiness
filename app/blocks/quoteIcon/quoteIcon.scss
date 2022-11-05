@@ -1,0 +1,65 @@
+.quoteIcon {
+	&__icon {
+		display: inline-block;
+		width: 0.6em;
+		height: 0.6em;
+		left: 0;
+		top: 50%;
+		transform: rotate(-45deg);
+
+		&::after,
+		&::before {
+			content: "";
+			width: inherit;
+			height: inherit;
+			position: absolute;
+		}
+
+		&::after {
+			top: -0.2em;
+			transform: translateY(-100%);
+		}
+
+		&::before {
+			left: -0.2em;
+			transform: translateX(-100%);
+		}
+
+		&:not(:last-child) {
+			margin-right: 0.85em;
+		}
+	}
+
+	&_red {
+		.quoteIcon__icon {
+			background-color: #fe5f5f;
+
+			&::after,
+			&::before {
+				background-color: #fe5f5f;
+			}
+		}
+	}
+
+	&_blue {
+		.quoteIcon__icon {
+			background-color: #3865a7;
+
+			&::after,
+			&::before {
+				background-color: #3865a7;
+			}
+		}
+	}
+
+	&_gray {
+		.quoteIcon__icon {
+			background-color: #f1f2f2;
+
+			&::after,
+			&::before {
+				background-color: #f1f2f2;
+			}
+		}
+	}
+}

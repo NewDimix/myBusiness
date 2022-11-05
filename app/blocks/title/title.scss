@@ -1,0 +1,51 @@
+.title {
+	font-size: 2.5em;
+	@include сirce700;
+	position: relative;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		width: 0.164em;
+		height: 0.164em;
+		background-color: #fe5f5f;
+		top: 50%;
+		transform: translateY(-50%) rotate(45deg);
+	}
+
+	&::after {
+		left: -0.4em;
+	}
+
+	&::before {
+		right: -0.4em;
+	}
+
+	&.animate {
+		opacity: 0;
+		transform: scale(0.8);
+
+		&::after,
+		&::before {
+			transform: translateY(-50%) rotate(765deg) scale(2);
+			opacity: 0;
+		}
+
+		&_active {
+			opacity: 1;
+			transform: scale(1);
+			transition: all 1s ease;
+
+			&::after,
+			&::before {
+				transform: translateY(-50%) rotate(45deg) scale(1);
+				transition: all 1s ease;
+				opacity: 1;
+			}
+		}
+	}
+}
